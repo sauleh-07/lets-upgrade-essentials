@@ -1,0 +1,46 @@
+* {
+  /* sets the margin and padding of every element  */
+  margin: 0;
+  padding: 0;
+}
+
+/* for parent container one */
+.container-one {
+  height: 200px;
+  margin: 10px;
+  background-color: grey;
+
+  /* to center the child elements */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; /* gives even space on main axis*/
+  align-items: center; /* centers elements on cross axis*/
+}
+
+/* selects every div child of the parent */
+.container-one > div {
+  width: 15%;
+  height: 100px;
+  background-color: red;
+}
+
+/* for parent container two */
+.container-two {
+  height: 200px;
+  margin: 10px;
+  background-color: #000;
+}
+
+/* selects every div child of the parent */
+.container-two > div {
+  width: 20%;
+  height: 100px;
+  background-color: grey;
+
+  /* sets the property for the div elements */
+  display: inline-block;
+
+  /* to center the divs using margins */
+  margin-left: 4%;
+  margin-top: 2%;
+}
